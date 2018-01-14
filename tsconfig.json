@@ -1,0 +1,27 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "allowSyntheticDefaultImports": true,
+    "lib": [
+      "dom",
+      "es2015",
+      "es2016"
+    ],
+    "jsx": "preserve",
+    "target": "es2016",
+    "module": "es2015",
+    "moduleResolution": "node",
+    "allowJs": true,
+    "noImplicitAny": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "removeComments": false,
+    "preserveConstEnums": true,
+    "sourceMap": true,
+    "skipLibCheck": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "allowUnreachableCode": true
+  },
+  "include": ["src/app/**/*.ts"]
+}

@@ -1,0 +1,51 @@
+html,
+body,
+body > .container {
+  height: 100%;
+}
+
+body {
+  > .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
+
+$primary: #01579b;
+
+h1{
+    padding: 0 15px;
+}
+
+.post{
+	color: $primary;
+	h5{
+		margin-top: 0;
+	}
+	.card-content p.right{
+		margin-left: 10px;
+	}
+	.btn{
+		width: 100%;
+		transition: .25s ease-in;
+		&:hover{
+			filter: brightness(1.2);
+		}
+	}
+}
+
+.comment{
+	h5{
+		margin-top: 0;
+		font-size: 20px;
+		font-weight: 700;
+		span{
+			font-weight: 400;
+			font-size: 14px;
+		}
+	}
+}
+.no-comments{
+	padding-left: 10px;
+}
