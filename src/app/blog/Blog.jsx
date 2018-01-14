@@ -26,14 +26,17 @@ class Blog extends Component {
 
   render() { 
     return(
-      <section>
+      <section className="container">
         {this.state.posts.map(post => 
-            <div className="post card horizontal grey lighten-4" key={post.id} id={post.id}>
-              <div className="card-stacked">
+            <div className="post horizontal grey lighten-4 col s12 m9 row" key={post.id} id={post.id}>
+              <div className="card">
+                <div className="card-image">
+                  <img src="http://lorempixel.com/400/200/cats"/> 
+                  <span className="card-title"><h5>{post.title}</h5></span>
+                </div>
                 <div className="card-content">
                   <p className="right">{post.author}</p>
                   <p className="right">{post.publish_date}</p>
-                  <h5>{post.title}</h5>
                   <p>{post.description}</p>
                 </div>
                 <div>

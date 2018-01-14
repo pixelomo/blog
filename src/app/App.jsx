@@ -9,7 +9,7 @@ import Navigation from './Navigation';
 const App = ({ children }) => (
   <div>
     <Navigation/>
-    <div className='row'>
+    <div>
       {children}
     </div>
   </div>
